@@ -11,7 +11,7 @@ namespace OpenFood.Infra.Data.Context.Configurations
             builder.ToTable("Products");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Code).HasColumnType("BIGINT").IsRequired();
-            builder.Property(x => x.Status).HasConversion<byte>().HasDefaultValue(0);
+            builder.Property(x => x.Status).HasConversion<int>();
             builder.Property(x => x.ImportedT).HasColumnType("DATETIME");
             builder.Property(x => x.Url).HasConversion<string>();
             builder.Property(x => x.ProductName).HasColumnType("VARCHAR(100)");

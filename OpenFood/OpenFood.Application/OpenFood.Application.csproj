@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\OpenFood.Domain\OpenFood.Domain.csproj" />
+    <ProjectReference Include="..\OpenFood.Infra.Data\OpenFood.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>
